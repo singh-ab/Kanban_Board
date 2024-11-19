@@ -1,4 +1,4 @@
-import { Backlog, Done, InProgress, Todo, Cancelled } from "./Svgs";
+import { Backlog, Done, InProgress, Todo, Cancelled } from "./svgexp";
 
 export const statusIcons = {
   todo: Todo,

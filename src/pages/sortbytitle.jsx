@@ -1,7 +1,7 @@
 import React from "react";
 import Status from "../components/status";
 import Card from "../components/card";
-import { Backlog, Cancelled, Done, InProgress, Todo } from "../utils/Svgs";
+import { Backlog, Cancelled, Done, InProgress, Todo } from "../utils/svgexp";
 
 const TitleSort = ({ statusCounts, sortTitle }) => {
   // Group sorted tickets by status

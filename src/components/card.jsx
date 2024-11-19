@@ -1,7 +1,7 @@
 import "./card.css";
 import ThreeDotMenu from "../assets/icons_FEtask/Img - High Priority.svg";
 import { getStatus } from "../utils/status";
-import { Dot, HighPriority, InProgress, LowPriority } from "../utils/Svgs";
+import { Dot, HighPriority, InProgress, LowPriority } from "../utils/svgexp";
 import { getPriorityIcon } from "../utils/priority";
 
 const Card = ({ data, userName, status }) => {
@@ -43,7 +43,7 @@ const Card = ({ data, userName, status }) => {
           {!status && (
             <>
               <img
-                src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png"
+                src="https://www.svgrepo.com/show/525577/user-circle.svg"
                 style={{ width: "2.1rem", height: "2.1rem" }}
                 className="card-cam-avatar"
                 alt=""

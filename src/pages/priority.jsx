@@ -7,50 +7,51 @@ import {
   NoPriority,
   UrgentPriorityColor,
   MediumPriority,
-} from "../utils/Svgs";
+} from "../utils/svgexp";
 
 const Priority = ({ priorityCounts, groupedTicketsByPriority }) => {
   console.log(priorityCounts);
   console.log(groupedTicketsByPriority);
   const {
-    high: highList,
-    low: lowList,
-    medium: mediumList,
-    noPriority: noPriorityList,
-    urgent: urgentList,
+    high: highPriorityCards,
+    low: lowPriorityCards,
+    medium: mediumPriorityCards,
+    noPriority: noPriorityCards,
+    urgent: urgentPriorityCards,
   } = groupedTicketsByPriority;
-  console.log(highList);
+  console.log(highPriorityCards);
+  
   const { high, low, medium, noPriority, urgent } = priorityCounts;
   return (
     <>
       <div className="grid-5" style={{ margin: "0 5rem" }}>
         <div>
           <Status status="No Priority" imgSvg={NoPriority} count={noPriority} />
-          {noPriorityList.map((data) => (
+          {noPriorityCards.map((data) => (
             <Card key={data.id} data={data} status={true} />
           ))}
         </div>
         <div>
           <Status status="Urgent" imgSvg={UrgentPriorityColor} count={urgent} />
-          {urgentList.map((data) => (
+          {urgentPriorityCards.map((data) => (
             <Card key={data.id} data={data} status={true} />
           ))}
         </div>
         <div>
           <Status status="High" imgSvg={HighPriority} count={high} />
-          {highList.map((data) => (
+          {highPriorityCards.map((data) => (
             <Card key={data.id} data={data} status={true} />
           ))}
         </div>
         <div>
           <Status status="Medium" imgSvg={MediumPriority} count={medium} />
-          {mediumList.map((data) => (
+          {mediumPriorityCards.map((data) => (
             <Card key={data.id} data={data} status={true} />
           ))}
         </div>
         <div>
           <Status status="Low" imgSvg={LowPriority} count={low} />
-          {lowList.map((data) => (
+          {lowPriorityCards.map((data) => (
             <Card key={data.id} data={data} status={true} />
           ))}
         </div>

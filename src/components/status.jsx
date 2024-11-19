@@ -1,4 +1,4 @@
-import { Add, ThreeDotMenu } from "../utils/Svgs";
+import { Add, ThreeDotMenu } from "../utils/svgexp";
 
 const Status = ({ status, imgSvg, count, user }) => {
   console.log(count);
@@ -17,7 +17,7 @@ const Status = ({ status, imgSvg, count, user }) => {
         <div style={{ display: "flex", gap: "0.7rem", alignItems: "center" }}>
           {user === "user" ? (
             <img
-              src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png"
+              src="https://www.svgrepo.com/show/525577/user-circle.svg"
               style={{ width: "2.1rem", height: "2.1rem" }}
               className="card-cam-avatar"
               alt=""

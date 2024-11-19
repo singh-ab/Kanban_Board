@@ -1,7 +1,7 @@
 import React from "react";
 import Status from "../components/status";
 import Card from "../components/card";
-import { Backlog } from "../utils/Svgs";
+import { Backlog } from "../utils/svgexp";
 
 const Users = ({ userTicketMap, usersCount, userDetailsMap }) => {
   console.log(usersCount);

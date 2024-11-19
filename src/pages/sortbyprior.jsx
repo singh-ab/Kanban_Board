@@ -7,7 +7,7 @@ import {
   NoPriority,
   UrgentPriorityColor,
   MediumPriority,
-} from "../utils/Svgs";
+} from "../utils/svgexp";
 
 const PrioritySort = ({ priorityCounts, groupedTicketsByPriority }) => {
   console.log(priorityCounts);

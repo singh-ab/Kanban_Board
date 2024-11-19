@@ -1,4 +1,4 @@
-import { UrgentPriority, HighPriority, MediumPriority, LowPriority, NoPriority } from "./Svgs";
+import { UrgentPriority, HighPriority, MediumPriority, LowPriority, NoPriority } from "./svgexp";
 
 export const priorityIcons = {
   4: UrgentPriority,    // Urgent
